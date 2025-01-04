@@ -23,9 +23,9 @@ Java implementations of the following algorithms:
 	- Depth-First Search (DFS)
 
 4. Greedy:
-	- Prim's
-	- Kruskal's
-	- Djiktra's
+	- Prim's Algorithm for Minimum Spanning Trees (MST)
+	- Kruskal's Algorithm for Minimum Spanning Trees (MST)
+	- Djiktra's Shortest Path Algorithm
 	- Knapsack (Later)
 
 5. Dynamic Programming (DP): (Later)
