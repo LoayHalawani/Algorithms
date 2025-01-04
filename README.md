@@ -41,7 +41,7 @@ Java implementations of the following algorithms:
 	- git clone https://github.com/LoayHalawani/Algorithms.git
 	- cd Algorithms
 
-2. To compile & run any Java file:
+2. To compile & run a Java file:
 	- javac <file_name.java>
 	- java <file_name>
 
