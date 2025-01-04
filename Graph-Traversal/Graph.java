@@ -26,7 +26,6 @@ public class Graph {
 		}
 	}
 
-	// BFS
 	private void BFS() {
 		initializeVisited();
 
@@ -48,7 +47,6 @@ public class Graph {
 		}
 	}
 
-	// DFS
 	private void DFS() {
 		initializeVisited();
 		DFSVisit(1);	
@@ -65,7 +63,6 @@ public class Graph {
 		}
 	}
 
-	// Driver
 	public static void main(String[] args) {
 		Graph graph = new Graph(8);
 

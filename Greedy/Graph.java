@@ -59,7 +59,6 @@ public class Graph {
 		}
 	}
 
-	// Prim's
 	private void prim() {
 		initializeVisited();
 		pq = new PriorityQueue<>(Comparator.comparingInt(e -> e.w));
@@ -90,7 +89,6 @@ public class Graph {
 		printMST();
 	}
 
-	// Kruskal's
 	private void kruskal() {
 		mst = new ArrayList<>(adj.length - 1);
 
@@ -139,7 +137,6 @@ public class Graph {
 		}
 	}
 
-	// Djikstra's
 	private void djikstra(char n) {
 		int s = n - 'a';
 
@@ -193,7 +190,6 @@ public class Graph {
         }
 	}	
 	
-	// Driver
 	public static void main(String[] args) {
 		Graph graph = new Graph(7);
 

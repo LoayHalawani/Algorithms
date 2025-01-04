@@ -8,7 +8,6 @@ public class Sorting {
 		arr[j] = temp;
 	}
 
-	// Bubble Sort - O(n^2)
 	private static void bubbleSort(int[] arr) {
 		for(int i = 0; i < arr.length - 1; i ++) {
 			for(int j = 0; j < arr.length - i - 1; j ++) {
@@ -19,7 +18,6 @@ public class Sorting {
 		}
 	}
 
-	// Selection Sort - O(n^2)
 	private static void selectionSort(int[] arr) {
 		for(int i = 0; i < arr.length - 1; i ++) {
 			int minIndex = i;
@@ -32,7 +30,6 @@ public class Sorting {
 		}
 	}
 
-	// Insertion Sort - O(n^2)
 	private static void insertionSort(int[] arr) {
 		for (int i = 1; i < arr.length; i ++) {
 			int j = i;
@@ -43,7 +40,6 @@ public class Sorting {
 		}
 	}
 
-	// Merge Sort - O(nlogn)
 	private static void mergeSort(int[] arr, int left, int right) {
 		if(left == right) {
 			return;
@@ -96,7 +92,6 @@ public class Sorting {
 		}
 	}
 
-	// Quick Sort - O(nlogn)
 	private static void quickSort(int[] arr, int left, int right) {
 		if(left >= right) {
 			return;
@@ -124,7 +119,6 @@ public class Sorting {
 		return i;
 	}
 
-	// Heap Sort - O(nlogn)
 	private static void heapSort(int[] arr) {
 		// Convert tree to Max Heap
 		for(int i = (arr.length / 2) - 1; i >= 0; i --) {
@@ -160,7 +154,6 @@ public class Sorting {
 		}
 	}
 
-	// Driver
 	public static void main(String[] args) {
 		int[] arr = {9, 8, 7, 6, 5, 4, 3, 2, 1};
 

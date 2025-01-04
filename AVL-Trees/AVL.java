@@ -19,7 +19,6 @@ public class AVL {
 
 	private Node root;
 
-	// Insertion
 	private Node insertNode(Node node, int key) {
 		if(node == null) {
 			return new Node(key);
@@ -51,7 +50,6 @@ public class AVL {
 		return getHeight(node.leftChild) - getHeight(node.rightChild);
 	}
 
-	// Rotations
 	private Node rotateLeft(Node node) {
 		if(node == null) {
 			return null;
@@ -82,7 +80,6 @@ public class AVL {
 		return newNode;
 	}
 
-	// Balancing
 	private Node balanceTree(Node node) {
 		if(node == null) {
 			return null;
@@ -124,7 +121,6 @@ public class AVL {
 		root = balanceTree(root);
 	}
 
-	// Deletion
 	private Node deleteNode(Node node, int key) {
 		if(node == null) {
 			return null;
@@ -170,7 +166,6 @@ public class AVL {
 		root = balanceTree(root);
 	}
 
-	// Searching
 	private Node searchNode(Node node, int key) {
 		if(node == null) {
 			return null;
@@ -194,7 +189,6 @@ public class AVL {
 		}
 	} 
 
-	// Traversals
 	private void preOrderTraverse(Node node) {
 		if(node == null) {
 			return;
@@ -222,7 +216,6 @@ public class AVL {
 		System.out.print(node);
 	}
 
-	// Driver
 	public static void main(String[] args) {
 		AVL tree = new AVL();
 
