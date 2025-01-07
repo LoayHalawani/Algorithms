@@ -15,12 +15,12 @@ Java implementations of the following algorithms:
 	- Heap Sort: O(nlogn)
 
 3. AVL Trees:
-	- Node insertion: O(h)/O(logn)
-	- Node deletion: O(h)/O(logn)
-	- Node searching: O(h)/O(logn)
-	- Node rotation (LL, LR, RR, RL): O(1)
-	- Tree balancing: O(h)/O(logn)
-	- Tree traversals (Preorder, Inorder, Postorder): O(n)
+	- Node Insertion: O(h)/O(logn)
+	- Node Deletion: O(h)/O(logn)
+	- Node Searching: O(h)/O(logn)
+	- Node Rotation (LL, LR, RR, RL): O(1)
+	- Tree Balancing: O(h)/O(logn)
+	- Tree Traversals (Preorder, Inorder, Postorder): O(n)
 
 4. Graph Traversals:
 	- Breadth-First Search (BFS): O(V+E)
@@ -29,7 +29,7 @@ Java implementations of the following algorithms:
 5. Greedy:
 	- Prim's Algorithm for Minimum Spanning Trees (MST): O(ElogV)
 	- Kruskal's Algorithm for Minimum Spanning Trees (MST): O(ElogV)/O(ElogE)
-	- Djiktra's Shortest Path Algorithm: O((V+E)logV)
+	- Djikstra's Shortest Path Algorithm: O((V+E)logV)
 	- Knapsack (Later)
 
 6. Dynamic Programming (DP): (Later)
