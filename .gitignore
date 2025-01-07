@@ -1,12 +1,12 @@
 # Sorting
-/Sorting/Sorting.class
+Sorting.class
 
 # AVL-Trees
-/AVL-Trees/AVL.class
-/AVL-Trees/AVL$Node.class
+AVL.class
+AVL$Node.class
 
 # Graph-Traversal
-/Graph-Traversal/Graph.class
+Graph.class
 
 # Greedy
 /Greedy/Graph$Edge.class
