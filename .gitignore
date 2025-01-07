@@ -1,16 +1,11 @@
-# Sorting
+BinarySearch.class
+
 Sorting.class
 
-# AVL-Trees
-AVL.class
-AVL$Node.class
+AVLTree.class
+AVLTree$Node.class
 
-# Graph-Traversal
 Graph.class
 
-# Greedy
 /Greedy/Graph$Edge.class
 /Greedy/Graph.class
-
-# DP
-

@@ -1,4 +1,4 @@
-public class AVL {
+public class AVLTree {
 	
 	private class Node {
 		public int key, height;
@@ -217,7 +217,7 @@ public class AVL {
 	}
 
 	public static void main(String[] args) {
-		AVL tree = new AVL();
+		AVLTree tree = new AVLTree();
 
 		System.out.println("Inserting nodes...\n");
 		tree.insert(61);
