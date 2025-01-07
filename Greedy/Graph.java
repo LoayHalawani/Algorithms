@@ -105,7 +105,7 @@ public class Graph {
 			int rootY = findSet(e.v);
 			if(rootX != rootY) {
 				mst.add(e);
-				union(e.u, e.v);
+				union(rootX, rootY);
 			}
 		}
 
@@ -122,7 +122,7 @@ public class Graph {
 
 	// FIND-SET(x)
 	private int findSet(int x) {
-		if(x == parent[x]) {
+		if(parent[x] == x) {
 			return x;
 		}
 		return findSet(parent[x]);
@@ -130,11 +130,7 @@ public class Graph {
 
 	// UNION(x, y)
 	private void union(int x, int y) {
-		int rootX = findSet(x);
-		int rootY = findSet(y);
-		if(rootX != rootY) {
-			parent[rootY] = rootX;
-		}
+		parent[y] = x;
 	}
 
 	private void djikstra(char n) {
@@ -169,10 +165,10 @@ public class Graph {
 	}
 
 	// INITIALIZE(s)
-	private void initialize(int u) {
+	private void initialize(int s) {
 		distances = new int[adj.length];
 		Arrays.fill(distances, Integer.MAX_VALUE);
-		distances[u] = 0;
+		distances[s] = 0;
 	}
 
 	// RELAX(u, v, w)
