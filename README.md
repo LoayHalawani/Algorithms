@@ -30,7 +30,7 @@ Java implementations of the following algorithms:
 	- Prim's Algorithm for Minimum Spanning Trees (MST): O(ElogV)
 	- Kruskal's Algorithm for Minimum Spanning Trees (MST): O(ElogV)/O(ElogE)
 	- Djikstra's Shortest Path Algorithm: O((V+E)logV)
-	- Knapsack (Later)
+	- Fractional Knapsack: O(nlogn)
 
 6. Dynamic Programming (DP): (Later)
 	- Bellman-Ford's
