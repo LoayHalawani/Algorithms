@@ -3,8 +3,7 @@ import java.util.*;
 public class Knapsack {
 	private int n, m;
 	private List<int[]> objects;
-	private double[] ratio;
-	private double[] profits;
+	private double[] ratios, profits;
 
 	public Knapsack(int n, int m) {
 		this.n = n;
@@ -17,9 +16,9 @@ public class Knapsack {
 	}
 
 	private void calculateRatios() {
-		ratio = new double[n];
+		ratios = new double[n];
 		for(int i = 0; i < n; i ++) {
-			ratio[i] = ((double) objects.get(i)[0] / objects.get(i)[1]);
+			ratios[i] = ((double) objects.get(i)[0] / objects.get(i)[1]);
 		}
 	}
 
@@ -28,20 +27,20 @@ public class Knapsack {
 		int maxIndex = 0;
 		while(m > 0) {
 			for(int i = 0; i < n; i ++) {
-				if(ratio[i] > ratio[maxIndex]) {
+				if(ratios[i] > ratios[maxIndex]) {
 					maxIndex = i;
 				}
 			}
 			if(m >= objects.get(maxIndex)[1]) {
-				ratio[maxIndex] = 0;
+				ratios[maxIndex] = 0;
 				profits[maxIndex] = objects.get(maxIndex)[0];
 				m -= objects.get(maxIndex)[1];
 			}
 			else {
-				profits[maxIndex] = ratio[maxIndex] * m;
+				profits[maxIndex] = ratios[maxIndex] * m;
                 m = 0;
 			}
-			ratio[maxIndex] = 0;
+			ratios[maxIndex] = 0;
 		}
 	}
 
