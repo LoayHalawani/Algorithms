@@ -51,29 +51,4 @@ public class Recursion {
 		System.out.println("Is \"alice\" a palindrome? " + res);
 		System.out.println("F(10) = " + fibonacci(10));
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
