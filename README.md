@@ -39,6 +39,13 @@ Java implementations of the following algorithms:
 	- Rod Cutting
 	- Knapsack
 
+7. Common Recursion Problems:
+	- Reverse Word
+	- Exponent
+	- Factorial
+	- Palindrome
+	- Fibonacci Sequence
+
 # Usage
 
 1. Clone the repository
