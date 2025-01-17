@@ -32,7 +32,6 @@ public class Knapsack {
 				}
 			}
 			if(m >= objects.get(maxIndex)[1]) {
-				ratios[maxIndex] = 0;
 				profits[maxIndex] = objects.get(maxIndex)[0];
 				m -= objects.get(maxIndex)[1];
 			}
