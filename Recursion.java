@@ -49,6 +49,6 @@ public class Recursion {
 		System.out.println("Is \"bob\" a palindrome? " + res);
 		res = isPalindrome("alice") ? "Yes" : "No";
 		System.out.println("Is \"alice\" a palindrome? " + res);
-		System.out.println("F(10) = " + fibonacci(10));
+		System.out.println("Fib(10) = " + fibonacci(10));
 	}
 }
